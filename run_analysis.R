@@ -76,6 +76,10 @@ names(mean_std_all) <- gsub("\\(\\)-", "_", names(mean_std_all)) %>%
   gsub("Gravity", "Gravity_", .) %>%     ## >>> readability
   gsub("__", "_", .)                     ## >>> readability
 
+## Cleanup -- removes all the intermediate objects
+rm(activities, features, testData, testAct, testSubj, trainData, trainAct, trainSubj)
+
+
 ## Dataset for step 5: "From the data set in step 4, creates a second, 
 ##   independent tidy data set with the average of each variable for each 
 ##   activity and each subject.
