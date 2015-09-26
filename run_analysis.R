@@ -15,7 +15,6 @@
 ##           the aggregated data to a file in your working directory
 ##           named "gacd_tidy.txt".
 
-library(readr)
 library(dplyr)
 library(data.table)
 library(magrittr)
